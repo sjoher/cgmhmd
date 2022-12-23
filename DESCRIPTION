@@ -1,0 +1,10 @@
+Package: cgmhmd
+Type: Package
+Title: Copula Graphical Models for Heterogeneous Mixed Data
+Version: 0.1.0
+Author: Sjoerd Hermes, Joost van Heerwaarden and Pariya Behrouzi.
+Maintainer: Sjoerd Hermes <sjoerd.hermes@wur.nl>
+Description: The cgmhmd package allows you to visualise multi-group multivariate mixed data with graphical models. The package also includes an option to simulate such data for exploratory or simulation purposes. 
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
