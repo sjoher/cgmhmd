@@ -1,8 +1,5 @@
 # FGL new unconnected = 1
 
-library(igraph)
-
-
   flsa.general_copula <-
     function(A,L,lam1,lam2,penalize.diagonal)
     {

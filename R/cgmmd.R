@@ -1,12 +1,11 @@
 cgmmd <- function(X, method, lambda1, lambda2, ncores){
   if(method == "Gibbs")
   {
-    source("Gibbs method.R")
-    source("FGL.R")
     K <- length(X)
     if(length(lambda1) == 1)
     {
       K <- length(X)
+      Theta <- vector(mode = "list", length = K)
       for(k in 1:K)
       {
         Theta[[k]] <- diag(ncol(X[[k]]))
@@ -48,8 +47,6 @@ cgmmd <- function(X, method, lambda1, lambda2, ncores){
   }
   else if(method == "Approximate")
   {
-    source("Approx method.R")
-    source("FGL.R")
     if(length(lambda1) == 1)
     {
       ini <- initialize(X, ncores = ncores)

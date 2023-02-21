@@ -1,6 +1,3 @@
-library(Matrix)
-library(tmvtnorm)
-
 Gibbs_method <- function(y, lambdas=lambdas, n_lambda=n_lambda, Theta = Theta, combination = combination, max.elongation = em.iter, em.tol=em.tol, ncores){
 
   p <- dim(y[[1]])[2]

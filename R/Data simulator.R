@@ -1,7 +1,3 @@
-library(MASS)
-library(igraph)
-library(BDgraph)
-
 data_sim <- function(network, n, p, K, ncat, rho, gamma_g = NULL, gamma_o, gamma_b = NULL, gamma_p = NULL, prob = NULL, nclass = NULL){
   if(network == "Circle"){
     theta_base <- matrix(0, p, p)
